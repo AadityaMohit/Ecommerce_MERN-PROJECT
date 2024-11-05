@@ -1,0 +1,286 @@
+.homepage {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+ 
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  align-items: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #c2185b;
+  transform: translateY(-3px);
+}
+
+/* Features Section */
+.features-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  max-width: 18%;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: #fafafa;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #e91e63;
+}
+
+.product-card h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonial {
+  max-width: 40%;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+ 
+.cta-section {
+  padding: 4rem 2rem;
+  background-color: #e91e63;
+  color: white;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust the height based on your design */
+  overflow: hidden;
+  margin-top: 41px;
+}
+
+.slider-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.8s ease-in-out, transform 1s ease;
+  opacity: 0;
+  transform: perspective(1000px) rotateY(20deg); /* Initial 3D rotation */
+}
+
+.slider-image.active {
+  opacity: 1;
+  transform: perspective(1000px) rotateY(0deg); /* Remove the 3D rotation on active slide */
+}
+
+.hero-image {
+  position: relative;
+  width: 20%; /* Adjust based on your design */
+  height: auto;
+  overflow: hidden;
+  perspective: 1000px; /* For 3D effect */
+}
+.hero-image {
+  position: relative;
+}
+
+.image-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-image {
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.slider-image.active {
+  opacity: 1;
+}
+
+.customer-image {
+  width: 100px; /* Adjust the size of the customer images as needed */
+  height: auto;
+  margin: 0 10px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Include box-shadow for depth */
+  border-radius: 10px; /* Optional: add some rounding to the images */
+  perspective: 1000px; /* Enable perspective for 3D effect */
+  animation: bounce 2s infinite ease-in-out; /* Add continuous bounce animation */
+}
+
+/* Apply staggered animation delay to each image */
+.customer-image:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.customer-image:nth-child(2) {
+  animation-delay: 0.5s; /* Delayed by 0.5 seconds */
+}
+
+.customer-image:nth-child(3) {
+  animation-delay: 1s; /* Delayed by 1 second */
+}
+
+.customer-image:nth-child(4) {
+  animation-delay: 1.5s; /* Delayed by 1.5 seconds */
+}
+
+.customer-image:hover {
+  transform: translateY(-30px) scale(1.3) rotateY(15deg); /* Move up, scale, and add rotation */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* Enhance shadow for depth effect */
+}
+
+/* Keyframes for continuous bounce effect */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) scale(1.3) rotateY(15deg); /* Original state */
+  }
+  40% {
+    transform: translateY(-10px) scale(2) rotateY(15deg); /* Move up and scale slightly more */
+  }
+  60% {
+    transform: translateY(-5px) scale(3) rotateY(15deg); /* Slightly lower scale */
+  }
+}
+
+/* Add this to your HomePage.css */
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.scroll-in {
+  animation: fadeInUp 0.5s forwards; /* Apply the fade-in animation */
+}
+
+
+
+
+.happy-customers {
+  margin: 20px 0;
+  text-align: center; /* Center the text */
+}
+
+.happy-customers {
+  margin: 20px 0;
+  text-align: center; /* Center the text */
+}
+
+.customer-count {
+  color: #e91e63;
+  font-weight: bold;
+  font-size: 28px;
+  display: inline-block; /* Make the count an inline-block for better styling */
+  animation: bounce 1s infinite; /* Apply bounce animation */
+}
+
+/* Keyframes for bouncing effect */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px); /* Move up */
+  }
+  60% {
+    transform: translateY(-10px); /* Slightly move up */
+  }
+}

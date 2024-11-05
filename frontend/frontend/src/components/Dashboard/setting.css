@@ -1,0 +1,85 @@
+.settings-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .profile-image-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+    align-items: center;    /* Vertically center the image */
+    height: 100%;           /* Set the container height as needed */
+  }
+  
+  .profile-image {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    border-radius: 50%;     /* Optional: Makes the image round */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .user-details {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-group p {
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .button-group {
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

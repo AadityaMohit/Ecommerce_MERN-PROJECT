@@ -1,0 +1,99 @@
+.billing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center elements horizontally */
+  justify-content: center; /* Center elements vertically */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.billing-section h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the product image and text */
+  margin-bottom: 20px;
+}
+
+.product-summary img {
+  max-width: 150px; /* Set a good size for the image */
+  display: block;
+  margin-bottom: 10px;
+}
+
+.billing-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align form elements at center */
+  justify-content: center; /* Center the form vertically */
+  width: 400px; /* Adjust the form width */
+  max-width: 100%;
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.billing-form .form-group {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.billing-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.billing-form input,
+.billing-form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.billing-form .form-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.billing-form .form-row .form-group {
+  width: 48%;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.order-confirmation {
+  text-align: center;
+}
+
+.order-confirmation h2 {
+  color: green;
+}

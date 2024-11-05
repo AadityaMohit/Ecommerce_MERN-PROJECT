@@ -1,0 +1,182 @@
+ 
+.navbar {
+  background-color: #e91e63;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  width: 100%;
+  z-index: 1000;
+ 
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.status-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0px 4px;
+  background-color:  #ff0c68;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.status-link:hover {
+  background-color: #28d905;  
+  box-shadow: 0 0 20px rgba(75, 192, 192, 0.5), 0 0 40px rgba(75, 192, 192, 0.3);  
+  transform: scale(1.05);  
+}
+
+.status-icon {
+  margin-right: 8px;
+  font-size: 1.5rem;
+}
+
+.status-link:active {
+  transform: translateY(1px);
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #ffeb3b;
+}
+
+.navbar-links li {
+  margin: 0 20px;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.navbar-item:hover {
+  color: #ffeb3b; /* Highlight on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.navbar-item .link-text {
+  margin-left: 8px;
+}
+
+.navbar-links a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffeb3b;
+  bottom: -5px;
+  left: 0;
+}
+
+.navbar-item svg {
+  transition: color 0.3s;
+}
+
+.navbar-item:hover svg {
+  color: #ffeb3b;  
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-item {
+    font-size: 18px;
+  }
+}
+/* Existing styles... */
+
+.profile-details {
+ 
+  top: 100%; /* Below the nav item */
+  left: 0;
+  background-color: black; /* Black background */
+  color: #ff69b4; /* Bright pink color for the text */
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 200px;
+  z-index: 2000; /* Ensure it appears above other elements */
+  display: none; /* Hidden by default */
+}
+
+.profile-details h3, .profile-details p {
+  margin: 0;
+  font-size: 16px; /* Size for headings */
+  color: #ff69b4; /* Bright pink text */
+}
+
+.profile-details p {
+  font-size: 14px; /* Smaller size for paragraphs */
+}
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.logout-button:hover {
+  background-color: #ff3333;
+}
+
+/* Adding a divider between each profile detail */
+.profile-details h3 + p {
+  border-top: 1px solid #ff69b4; /* Bright pink line divider */
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.profile-details p + p {
+  border-top: 1px solid #ff69b4; /* Bright pink line divider */
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+/* Show the profile details on hover */
+.navbar-item.profile-item:hover .profile-details {
+  display: block;
+}
+
+
+
+@media (max-width: 768px) {
+  /* Adjust profile details for mobile */
+  .profile-details {
+    width: 100%;
+    top: 100%;
+  }
+}

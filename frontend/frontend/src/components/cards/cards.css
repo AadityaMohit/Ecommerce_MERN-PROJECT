@@ -1,0 +1,137 @@
+.card {
+    position: relative;
+    width: 200px; /* Set a fixed width for the card */
+    height: 300px; /* Fixed height for the card */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+    overflow: hidden; /* Prevent content overflow */
+    margin: 0.5rem; /* Spacing around each card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transform and shadow on hover */
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.05); /* Slightly lift and scale the card on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+.card-image {
+    width: 100%; /* Full width of the card */
+    height: 60%; /* Adjust height for the image inside the card */
+    object-fit: cover; /* Cover the area with the image without distortion */
+    border-bottom: 2px solid #e91e63; /* Add a decorative border below the image */
+}
+
+.card-content {
+    padding: 0.5rem; /* Spacing inside the card */
+    height: 40%; /* Make sure the content takes the remaining height */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)); /* Gradient background */
+    border-radius: 0 0 10px 10px; /* Round bottom corners only */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Title size */
+    margin: 0.5rem 0; /* Margin around title */
+    color: #333; /* Dark color for contrast */
+}
+
+.card-description {
+    font-size: 0.9rem; /* Description size */
+    color: #666; /* Gray color for description */
+}
+
+.card-price {
+    font-size: 1.1rem; /* Price size */
+    color: #e91e63; /* Color for the price */
+    margin: 0.5rem 0; /* Margin around price */
+    font-weight: bold; /* Bold price for emphasis */
+}
+
+.add-to-cart-button {
+    padding: 0.4rem 0.8rem; /* Button padding */
+    background-color: #e91e63; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.add-to-cart-button:hover {
+    background-color: #c2185b; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.features-section {
+    padding: 2rem 1rem; /* Adjust section padding */
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the section */
+}
+
+.features-section h2 {
+    font-size: 2rem; /* Decrease section title size */
+    margin-bottom: 1.5rem; /* Adjust margin */
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    max-width: 200px; /* Set a smaller max width for product cards */
+    margin: 0.5rem; /* Adjust spacing */
+    padding: 0; /* Remove padding */
+    background-color: #fafafa; /* Light background for cards */
+    border-radius: 10px; /* Round corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.product-card img {
+    width: 100%; /* Full width */
+    height: 60%; /* Fixed height for the image */
+    object-fit: cover; /* Ensures image fits without overflowing */
+    border-radius: 10px 10px 0 0; /* Round top corners only */
+}
+
+.product-card:hover {
+    transform: translateY(-5px) scale(1.05); /* Adjust hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adjust shadow */
+}
+
+.product-card h3 {
+    margin-top: 0.5rem; /* Adjust margin */
+    font-size: 1.25rem; /* Decrease title size */
+    color: #333; /* Title color */
+}
+
+.product-card p {
+    font-size: 1rem; /* Decrease font size */
+    margin-top: 0.3rem; /* Adjust margin */
+}
+
+.loader {
+    display: flex;
+    justify-content: center; /* Center the loader horizontally */
+    align-items: center; /* Center the loader vertically */
+    height: 100%; /* Full height of the parent container */
+}
+
+.loader img {
+    width: 50px; /* Set a size for the loader image */
+    height: 50px; /* Set a size for the loader image */
+    animation: rotate 1s linear infinite; /* Rotate animation */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,34 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: #e91e63;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+  }
+  
+  .social-icon {
+    font-size: 1.5em;
+    color: white;
+    transition: color 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .social-icon:hover {
+    color: rgb(255, 105, 180); /* Change color on hover */
+  }
+  
+  .footer-bottom {
+    margin-top: 10px;
+    font-size: 0.9em; /* Smaller font for copyright */
+    color: rgba(255, 255, 255, 0.7); /* Slightly transparent for a softer look */
+  }
+  

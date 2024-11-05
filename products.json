@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Product 1",
+    "image": "http://localhost:5000/images/product1.jpg",
+    "description": "This is a test product",
+    "price": 29.99,
+    "rating": 4
+  },
+  {
+    "name": "Product 2",
+    "image": "http://localhost:5000/images/product2.jpg",
+    "description": "Another sample product",
+    "price": 49.99,
+    "rating": 5
+  },
+  {
+    "name": "Product 3",
+    "image": "http://localhost:5000/images/product3.jpg",
+    "description": "Yet another product for testing",
+    "price": 19.99,
+    "rating": 3
+  },
+  {
+    "name": "Product 4",
+    "image": "http://localhost:5000/images/product4.jpg",
+    "description": "High-end test product",
+    "price": 99.99,
+    "rating": 4.5
+  },
+  {
+    "name": "Product 5",
+    "image": "http://localhost:5000/images/product5.jpg",
+    "description": "Innovative gadget for everyday use",
+    "price": 79.99,
+    "rating": 4.8
+  },
+  {
+    "name": "Product 6",
+    "image": "http://localhost:5000/images/product6.jpg",
+    "description": "Sleek and modern design for professionals",
+    "price": 59.99,
+    "rating": 4.7
+  },
+  {
+    "name": "Product 7",
+    "image": "http://localhost:5000/images/product7.jpg",
+    "description": "Compact product perfect for travel",
+    "price": 24.99,
+    "rating": 3.9
+  },
+  {
+    "name": "Product 8",
+    "image": "http://localhost:5000/images/product8.jpg",
+    "description": "High-performance product with advanced features",
+    "price": 149.99,
+    "rating": 4.9
+  },
+  {
+    "name": "Product 9",
+    "image": "http://localhost:5000/images/product9.jpg",
+    "description": "Affordable product for budget-conscious buyers",
+    "price": 14.99,
+    "rating": 3.5
+  },
+  {
+    "name": "Product 10",
+    "image": "http://localhost:5000/images/product10.jpg",
+    "description": "A popular choice among tech enthusiasts",
+    "price": 89.99,
+    "rating": 4.6
+  },
+  {
+    "name": "Product 11",
+    "image": "http://localhost:5000/images/product11.jpg",
+    "description": "Environment-friendly and sustainable product",
+    "price": 39.99,
+    "rating": 4.2
+  },
+  {
+    "name": "Product 12",
+    "image": "http://localhost:5000/images/product12.jpg",
+    "description": "Top-rated product with excellent reviews",
+    "price": 129.99,
+    "rating": 5
+  },
+  {
+    "name": "Product 13",
+    "image": "http://localhost:5000/images/product13.jpg",
+    "description": "Compact design, perfect for small spaces",
+    "price": 22.99,
+    "rating": 4
+  },
+  {
+    "name": "Product 14",
+    "image": "http://localhost:5000/images/product14.jpg",
+    "description": "A must-have product for hobbyists",
+    "price": 69.99,
+    "rating": 4.3
+  }
+]

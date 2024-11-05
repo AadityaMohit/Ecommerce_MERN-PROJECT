@@ -1,0 +1,129 @@
+.order-status-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+  }
+  
+  .order-status-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .order-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 6rem;
+  }
+  
+  .order-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .order-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .order-details p {
+    margin: 0;
+  }
+  
+  /* Base status styles */
+  .status {
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    animation: glowing 1.5s infinite alternate;
+  }
+  
+  /* Status Specific Glowing Animation */
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6);
+    }
+  }
+  
+  /* Glowing Gradient Colors */
+  .status.initialized {
+    background: linear-gradient(45deg, #f0ad4e, #f39c12);
+    animation: initializedGlow 1.5s infinite alternate;
+  }
+  
+  @keyframes initializedGlow {
+    0%, 100% {
+      box-shadow: 0 0 10px #f39c12, 0 0 20px #f0ad4e;
+    }
+    50% {
+      box-shadow: 0 0 30px #f39c12, 0 0 40px #f0ad4e;
+    }
+  }
+  
+  .status.packed {
+    background: linear-gradient(45deg, #5bc0de, #3498db);
+    animation: packedGlow 1.5s infinite alternate;
+  }
+  
+  @keyframes packedGlow {
+    0%, 100% {
+      box-shadow: 0 0 10px #3498db, 0 0 20px #5bc0de;
+    }
+    50% {
+      box-shadow: 0 0 30px #3498db, 0 0 40px #5bc0de;
+    }
+  }
+  
+  .status.outForDelivery {
+    background: linear-gradient(45deg, #5cb85c, #2ecc71);
+    animation: deliveryGlow 1.5s infinite alternate;
+  }
+  
+  @keyframes deliveryGlow {
+    0%, 100% {
+      box-shadow: 0 0 10px #2ecc71, 0 0 20px #5cb85c;
+    }
+    50% {
+      box-shadow: 0 0 30px #2ecc71, 0 0 40px #5cb85c;
+    }
+  }
+  
+  .payment-method {
+    font-size: 1rem;
+    color: green;
+  }
+  
+  .payment-method::before {
+    content: '₹'; /* Rupee symbol */
+    margin-right: 5px;
+  }
+  
