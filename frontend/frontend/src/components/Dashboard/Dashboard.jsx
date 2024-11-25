@@ -119,8 +119,7 @@ function Dashboard() {
 
 
       <aside className="sidebar">
-        <h2>Dashboard</h2>
-        <nav>
+         <nav>
           <ul>
             <li>
               <FontAwesomeIcon icon={faChartLine} />
@@ -130,12 +129,12 @@ function Dashboard() {
               <FontAwesomeIcon icon={faFileAlt} />
               <span> Reports</span>
             </li>
-            <li><Link to="/analytics">
+            <li><Link style={{color:'inherit',textDecoration:'none'}} to="/analytics">
               <FontAwesomeIcon icon={faChartBar} />
-              <span> Analytics</span>
+              <span style={{color:'inherit'}}> Analytics</span>
             </Link>
             </li>
-            <li><Link to="/setting">
+            <li><Link style={{color:'inherit',textDecoration:'none'}} to="/setting">
               <FontAwesomeIcon icon={faCog} />
               <span> Settings</span>
             </Link></li>
@@ -163,14 +162,7 @@ function Dashboard() {
             <h3>Total Orders</h3>
             <p>{orderCount}</p>
           </div>
-          <div className="chart-container">
-            <h3>User Count Bar Chart</h3>
-            <svg id="userChart"></svg>
-            <h3>Product Count Bar Chart</h3>
-            <svg id="productChart"></svg>
-            <h3>Order Count Bar Chart</h3>
-            <svg id="orderChart"></svg>
-          </div>
+       
         </div>
       </div>
     </div>

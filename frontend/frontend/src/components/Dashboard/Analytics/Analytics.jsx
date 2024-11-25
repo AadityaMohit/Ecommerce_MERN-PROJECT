@@ -8,7 +8,7 @@ function Analytics() {
   // Fetch user data from the API
   const fetchUserData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/auth/users'); // Replace with your API URL
+      const response = await fetch('http://localhost:5000/api/auth/users');  
       const data = await response.json();
 
       if (data && data.users) {

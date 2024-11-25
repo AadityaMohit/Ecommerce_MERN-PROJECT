@@ -97,12 +97,12 @@ function Navbar() {
                 <div className="profile-details">
                   <h3>User: {username} <FontAwesomeIcon icon={faUser} /></h3>
                   <p>Email: {useremail}</p>
-                  <p>Role: Developer</p>
+            
                   <button onClick={handleLogout} className="logout-button">
                     Logout
                   </button>
-                  <Link to="/orderstatus" className="status-link">
-      <FaClipboardList className="status-icon" /> Your Orders
+                  <Link to="/orderstatus" style={{color:'white'}} >Your Orders
+  
     </Link>
                 </div>
               )}

@@ -96,7 +96,7 @@ function Message() {
         />
         <button type="submit" className="send-button">Send</button>
       </form>
-      <p>{status}</p>
+      {/* <p>{status}</p> */}
     </div>
   );
 }
