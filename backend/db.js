@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURL = 'mongodb://localhost:27017/test1013';
+const mongoURL = 'mongodb+srv://aadityamohit:MpOOv5TV5PdJtSh7@cluster0.eltgmgq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 
 const connectToMongo = () => {

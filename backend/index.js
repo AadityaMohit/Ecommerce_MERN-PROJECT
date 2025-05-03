@@ -16,7 +16,9 @@ app.use('/api/products',require('./routes/Products'))
 app.use('/api/messages', require('./routes/message'));
 
 
-
+app.use(cors({
+  origin: '*',
+}));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
